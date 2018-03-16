@@ -1,0 +1,42 @@
+
+header{
+	background-color: black;
+	text-align: center;
+	color: white;
+}
+
+nav{
+	margin-top: 20px;
+	background-color: #DCDCDC;
+
+}
+
+footer{
+	background-color: black;
+	text-align: center;
+	color: white;
+}
+
+section{
+	background-color: white;
+}
+
+aside{
+	display: inline-block;
+	margin-top: 10px;
+	
+}
+
+.botao{
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.teste{
+	margin-left: 15px;
+}
+
+.prd{
+	display: inline-block;
+}
+
