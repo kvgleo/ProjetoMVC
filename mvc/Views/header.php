@@ -16,9 +16,9 @@
 		</div>
         <div class="row" style="background-color: #DCDCDC">
 			<nav class="col-md-3"> 
-				<p><a href="?c=s&a=h">Home </a></p>
-				<p><a href="?c=s&a=f"> Formulario </a></p>
-				<p><a href="?c=s&a=s"> Sobre </a></p>
-				<p><a href="?c=s&a=p"> Produtos </a></p> 
+				<p><a href="?m=s&a=h">Home </a></p>
+				<p><a href="?m=c&a=cc"> Cadastrar Formulário </a></p>
+				<p><a href="?m=s&a=s"> Sobre </a></p>
+				<p><a href="?m=s&a=p"> Produtos </a></p> 
 			</nav>
             <section class="col-md-6">

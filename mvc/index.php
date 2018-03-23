@@ -1,5 +1,5 @@
 <?php
-if(!isset($_GET['c'])){
+if(!isset($_GET['m'])){
     require_once("Controllers/siteController.php");
     $site = new siteController();
     $site -> index();
@@ -7,36 +7,57 @@ if(!isset($_GET['c'])){
 
 }else{
 
-    switch ($_REQUEST['c']){
+    switch ($_REQUEST['m']){
 
         case 's':
             require_once("Controllers/siteController.php");
             $site= new siteController();
+                if(!isset($_GET['a']))
+                    $site -> index();
+                else{
+                    switch($_REQUEST['a']){
+
+                            case 's':
+                            $site -> sobre();
+                            break;
+
+                            case 'f':
+                            $site -> formulario();
+                            break;
+
+                            case 'h':
+                            $site -> index();
+                            break;
+
+                            case 'p':
+                            $site -> produtos();
+                            break;
+                    }
+                } 
+
+        case 'c':
+            require_once("Controllers/clientesController.php");
+            $cliente = new clientesController();
             if(!isset($_GET['a']))
-                $site -> index();
+                $cliente -> criar();
             else{
-                switch($_REQUEST['a']){
+                switch ($_REQUEST['a']){
+                    case 'cc':
+                    $cliente-> criar();
+                    break;
 
-                        case 's':
-                        $site -> sobre();
-                        break;
+                    case 'cs':
+                    $cliente-> show();
+                    break;
 
-                        case 'f':
-                        $site -> formulario();
-                        break;
-
-                        case 'h':
-                        $site -> index();
-                        break;
-
-                        case 'p':
-                        $site -> produtos();
-                        break;
                 }
-            } 
+            }
 
-        }
+
+
+
     }
+}
 
 
 /*Criar a seguinte estrutura:
